@@ -1,0 +1,62 @@
+name: robodiff
+channels:
+  - pytorch
+  - pytorch3d
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pip
+  - cudatoolkit=11.6
+  - pytorch=1.12.1
+  - torchvision=0.13.1
+  - pytorch3d=0.7.0
+  - numpy
+  - numba
+  - scipy
+  - py-opencv
+  - cffi
+  - ipykernel
+  - matplotlib
+  - zarr
+  - numcodecs
+  - h5py
+  - hydra-core
+  - einops
+  - tqdm
+  - dill
+  - scikit-video
+  - scikit-image
+  - gym=0.21.0
+  - pymunk
+  - wandb
+  - threadpoolctl
+  - shapely
+  - cython
+  - imageio
+  - imageio-ffmpeg
+  - termcolor
+  - tensorboard
+  - tensorboardx
+  - psutil
+  - click
+  - boto3
+  - accelerate
+  - datasets
+  - diffusers
+  - av
+  - cmake
+  # trick to avoid cpu affinity issue described in https://github.com/pytorch/pytorch/issues/99625
+  - llvm-openmp
+  - imagecodecs
+  - pip:
+    - ray[default,tune]==2.2.0
+    - free-mujoco-py==2.1.6
+    - pygame==2.1.2
+    - pybullet-svl==3.1.6.4
+    - robosuite @ https://github.com/cheng-chi/robosuite/archive/277ab9588ad7a4f4b55cf75508b44aa67ec171f0.tar.gz
+    - robomimic==0.2.0
+    - pytorchvideo==0.1.5
+    - imagecodecs==2022.9.26
+    - r3m @ https://github.com/facebookresearch/r3m/archive/b2334e726887fa0206962d7984c69c5fb09cceab.tar.gz
+    - dm-control==1.0.9
